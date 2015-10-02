@@ -1,0 +1,9 @@
+There are two ways of running the code.
+
+1. run locally directly
+
+    1. Compile the scala object and using sbt and create a jar:
+	            sbt package
+	  2. Running the code:
+	            sbt 'runMain org.vam.spark.Logistic_Apache_Spark glass.txt'
+	 
