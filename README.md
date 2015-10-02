@@ -18,7 +18,8 @@ I spent sufficient amount of time understanding Apache Spark using these links:
    and uses LogisticRegressionWithLBFGS to fit a logistic regression model.
 3. Trained model is evaluated against the test dataset and saved to disk.
 4. Dataset is in csv format and not in standard LIBSVM format(default spark format)
-5. Link for the UCI dataset: https://archive.ics.uci.edu/ml/datasets/Glass+Identification
+5. Apply z-mean normalization to the data.
+6. Link for the UCI dataset: https://archive.ics.uci.edu/ml/datasets/Glass+Identification
   UCI glass dataset: which identifies the type of glass based on its components :
             ( -- 1 building_windows_float_processed
               -- 2 building_windows_non_float_processed
