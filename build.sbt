@@ -1,4 +1,4 @@
-name := "scala_stuff"
+name := "ApacheSpark_Scala"
 
 version := "1.0"
 
