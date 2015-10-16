@@ -19,7 +19,9 @@ object ALSClient {
       .set("spark.kryoserializer.buffer", "64m")
 
     val sc = new SparkContext(conf)
-
+    // using checkpointing to make sure I dont get serialization error for huge no of iterations
+    sc.setCheckpointDir("MovieRecommendationCheckPoint")
+    
     // Load and parse the movies rating file and movies mapping file
     //movies rating file consists of userid,movieid,rating,timestamp
     //movies mapping file consists of movieid,movie name,genre
@@ -82,7 +84,13 @@ object ALSClient {
       movies_name
     }
     //save recommended movies as a file in HDFS
-    movies_name(0).saveAsTextFile("ALSMovieRecommendation")
+   // movies_name(0).saveAsTextFile("ALSMovieRecommendation")
+        //save recommended movies as a file in HDFS
+    var i = 0
+    val final_value= movies_name.foreach{rdd=>
+    rdd.saveAsTextFile("ALSMovieRecommend/"+i)
+      i = i+1
+    }
     sc.stop()
   }
 }
