@@ -1,4 +1,4 @@
-There are two ways of running the code.
+There are two ways of running the Logistic regression code.
 
 1. run locally directly
 
@@ -8,6 +8,10 @@ There are two ways of running the code.
 	            sbt 'runMain org.vam.spark.Logistic_Apache_Spark glass.txt'
 	        
 2. run it on the hdfs yarn cluster
-	1. <spark installed dir>/bin/spark-submit --class org.vam.spark.Logistic_Apache_Spark --master yarn --deploy-mode 		cluster --executor-memory 7g --queue default --num-executors 10 --driver-memory 7g ./'logistic.jar' glass.txt
+	1. <spark installed dir>/bin/spark-submit --class org.vam.spark.Logistic_Apache_Spark --master yarn --deploy-mode 		cluster --executor-memory 7g --queue default --num-executors 10 --driver-memory 7g ./'ApacheSpark_Scala.jar' glass.txt
 	2. Output can be see by looking at the file.
 	hadoop fs -ls /user/vardhaman/Logistic_output/
+
+Running ALS recommendation code on HDFS yarn cluster
+
+		1. <spark installed dir>/bin/spark-submit --class org.vam.spark.ALSClient --master yarn --deploy-mode 				cluster --executor-memory 7g --queue default --num-executors 500 --driver-memory 7g ./'ApacheSpark_Scala.jar' 			ratings.csv movies.txt users.txt
