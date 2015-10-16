@@ -42,7 +42,7 @@ object ALSClient {
     //the regularization parameter
     val lambda = 0.02
     //no of steps before convergence
-    val numIterations = 100
+    val numIterations = 1000
 
     // load rating file and build ratings input RDD of (user, product, rating) triples
     val ratings = ratings_file.map { line =>
