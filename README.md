@@ -10,6 +10,7 @@ I spent sufficient amount of time understanding Apache Spark using these links:
     1. http://spark.apache.org/docs/latest/index.html
     
 1. First project within Spark/Scala module is to implement Multivariate Logistic Regression using Apache Spark.
+2. Second project with Spark/Scala moudle is to implement Movie Recommendation using Spark Mllib ALS algorithm
 
 #Logistic Regression using Apache Spark libraries.
 
@@ -29,3 +30,9 @@ I spent sufficient amount of time understanding Apache Spark using these links:
               -- 6 tableware
               -- 7 headlamps  ) 
   
+#Movie Recommendation using ALS(Alternating Least Sqaure algorithm)
+
+1. I implmented distributed version for Movie Recommendation using Apache Spark ALS algorithm as it was taking 3 hours to train a model with 1 Million ratings on my laptop/single machine. Running it on Apache Spark took like 15 minutes. Boom! What a performance improvement
+
+2. Refer to Movie recommendation project for more details on what the project is about and run.txt for more steps on how to run the code.
+https://github.com/metpallyv/MovieRecommendation
