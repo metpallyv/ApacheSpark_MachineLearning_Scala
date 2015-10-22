@@ -15,3 +15,13 @@ There are two ways of running the Logistic regression code.
 Running ALS recommendation code on HDFS yarn cluster
 
 		1. <spark installed dir>/bin/spark-submit --class org.vam.spark.ALSClient --master yarn --deploy-mode 				cluster --executor-memory 7g --queue default --num-executors 500 --driver-memory 7g ./'ApacheSpark_Scala.jar' 			ratings.csv movies.txt users.txt
+		
+
+Running RandomForest classiifer on HDFS yarn cluster(check the source code for optional parameters)
+	
+	Spambase dataset
+		1. <spark installed dir>/bin/spark-submit --class org.vam.spark.RandomForestClient --master yarn --deploy-mode 			cluster --executor-memory 7g --queue default --num-executors 10 --driver-memory 7g ./'scala_stuff-assembly-1.0			.jar' --numClasses 2 --checkpointDir RandomForestCheckpoint --checkpointInterval 5 spambase.csv
+	
+	Glassdataset
+		2.<spark installed dir>/bin/spark-submit --class org.vam.spark.RandomForestClient --master yarn --deploy-mode 			cluster --executor-memory 7g --queue default --num-executors 10 --driver-memory 7g ./'scala_stuff-assembly-1.0			.jar' --numClasses 7 --checkpointDir RandomForestCheckpoint --checkpointInterval 5 glass.txt
+
