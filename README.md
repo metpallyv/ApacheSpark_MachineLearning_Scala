@@ -1,5 +1,6 @@
 # Apache_Spark using Scala
-The Goal of this project to work/learn Apache Spark using Scala
+The Goal of this project to work/learn Apache Spark using Scala and run machine learning algorithms on 
+HDFS Yarn using Apache Spark. 
 
 I spent sufficient amount of time understanding Scala using these links:
     
