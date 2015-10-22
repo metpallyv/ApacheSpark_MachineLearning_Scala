@@ -1,6 +1,5 @@
-# Apache_Spark using Scala
-The Goal of this project to work/learn Apache Spark using Scala and run machine learning algorithms on 
-HDFS Yarn using Apache Spark. 
+# MachineLearning_ApacheSpark_Scala
+The Goal of this project run machine learning algorithms on distributed file system(HDFS Yarn) using Apache Spark and Scala. 
 
 I spent sufficient amount of time understanding Scala using these links:
     
@@ -8,8 +7,14 @@ I spent sufficient amount of time understanding Scala using these links:
     2. http://icl-f11.utcompling.com/links
     
 I spent sufficient amount of time understanding Apache Spark using these links:
+
     1. http://spark.apache.org/docs/latest/index.html
+    2. https://www.safaribooksonline.com/library/view/learning-spark/9781449359034/ch01.html
     
+I am sure you will find lots of material on internet on distributed file system and the need for dfs, especially in Machine Learning and NLP.
+
+Here are my projects:(I keep adding new projects)
+
 1. First project within Spark/Scala module is to implement Multivariate Classification using Logistic Regression 
 2. Second project with Spark/Scala module is to implement Movie Recommendation using Spark Mllib ALS algorithm.
 3. Third project with Spark/Scala module is to implement Classification task using Ensemble methods(Random Forest)
