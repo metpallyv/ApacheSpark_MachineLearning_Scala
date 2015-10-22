@@ -1,5 +1,7 @@
+/**
+ * Created by vardhaman on 10/20/15.
+ */
 package org.vam.spark
-
 import org.apache.spark.mllib.evaluation.MulticlassMetrics
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkContext, SparkConf}
@@ -12,9 +14,6 @@ import scopt.OptionParser
 import org.vam.spark.AbstractParams
 import scala.collection.mutable
 
-/**
- * Created by vardhaman on 10/20/15.
- */
 object RandomForestClient {
   // define default parameters
   case class Params(
