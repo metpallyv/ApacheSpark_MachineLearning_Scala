@@ -1,4 +1,4 @@
-# MachineLearning_Spark_Scala
+# ApacheSpark_MachineLearning_Scala
 The Goal of this project run machine learning algorithms on distributed file system(HDFS Yarn) using Apache Spark and Scala. 
 
 I spent sufficient amount of time understanding Scala using these links:
